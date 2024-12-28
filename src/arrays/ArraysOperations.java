@@ -11,7 +11,7 @@ public class ArraysOperations {
         }
         return true;
     }
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         //static initialization
         int[] arr= {6,4,8,9,3};
         for(int x: arr) {
@@ -22,8 +22,8 @@ public class ArraysOperations {
         int[] arr1=new int[7];
         arr1[0]=5;
         arr1[3]=4;
-        for(int i=0;i<arr1.length;i++) {
-            System.out.print(arr1[i]+" ");
+        for (int k : arr1) {
+            System.out.print(k + " ");
         }
 
         System.out.println();
@@ -40,12 +40,12 @@ public class ArraysOperations {
         int[] arr2= {4,7,2,9,3,5};
         int min=arr2[0];
         int max=arr2[0];
-        for(int i=0;i<arr2.length;i++) {
-            if(arr2[i]<min) {
-                min=arr2[i];
+        for (int k : arr2) {
+            if (k < min) {
+                min = k;
             }
-            if(arr2[i]>max) {
-                max=arr2[i];
+            if (k > max) {
+                max = k;
             }
         }
         System.out.print("Minimum: "+min +" "+" Maximum: "+max);
@@ -71,7 +71,7 @@ public class ArraysOperations {
         }
 
         int[] arr4= {2,6,6,8,9};
-        Boolean result=isSorted(arr4);
+        boolean result=isSorted(arr4);
         System.out.println("Array is sorted? "+result);
 
 
